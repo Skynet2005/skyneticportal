@@ -2,7 +2,7 @@ import { FC, useEffect, useRef } from 'react';
 
 // import { useTranslation } from 'next-i18next';
 
-import { Plugin, PluginList } from '../../../utils/types/plugin';
+import { Plugin, PluginList } from '../../../types/plugin';
 
 interface Props {
   plugin: Plugin | null;

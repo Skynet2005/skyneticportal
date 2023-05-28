@@ -10,9 +10,7 @@ const getCurrentUser = async () => {
     const session = await getSession();
 
     // If the user is not authenticated or doesn't have an email, return null
-    if (!session?.user?.email) {
-      return null;
-    }
+    if (!session?.user?.email) { return null; }
 
     // Fetch the current user's data from the database using their email as a unique identifier
     const currentUser = await prisma.user.findUnique({
@@ -22,9 +20,7 @@ const getCurrentUser = async () => {
     });
 
     // If the currentUser is not found in the database, return null
-    if (!currentUser) {
-      return null;
-    }
+    if (!currentUser) { return null; }
 
     // Return the fetched current user's data
     return currentUser;

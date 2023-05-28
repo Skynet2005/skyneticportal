@@ -1,4 +1,9 @@
 {
   "WillLuke.nextjs.addTypesOnSave": true,
-  "WillLuke.nextjs.hasPrompted": true
+  "WillLuke.nextjs.hasPrompted": true,
+  "githubPullRequests.remotes": [
+    "origin",
+    "upstream",
+    "https://github.com/Skynet2005/skyneticportal.git"
+  ]
 }

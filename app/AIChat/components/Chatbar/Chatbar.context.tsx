@@ -2,9 +2,9 @@ import { Dispatch, createContext } from 'react';
 
 import { ActionType } from '../../../utils/messenger/useHooks/useCreateReducer';
 
-import { Conversation } from '../../../utils/types/chat';
-import { SupportedExportFormats } from '../../../utils/types/export';
-import { PluginKey } from '../../../utils/types/plugin';
+import { Conversation } from '../../../types/aichat/chat';
+import { SupportedExportFormats } from '../../../types/export';
+import { PluginKey } from '../../../types/plugin';
 
 import { ChatbarInitialState } from './Chatbar.state';
 

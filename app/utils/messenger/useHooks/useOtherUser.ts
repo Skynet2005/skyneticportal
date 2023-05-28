@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
 import { useMemo } from "react";
-import { FullConversationType } from "../../types";
+import { FullConversationType } from "../../../types/messenger";
 import { User } from "@prisma/client";
 
 // Hook to extract the other user from a conversation

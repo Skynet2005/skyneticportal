@@ -1,5 +1,4 @@
-// Use the required database client
-'use client';
+"use client";
 
 // Import required components and hooks
 import DesktopItem from "./DesktopItem";

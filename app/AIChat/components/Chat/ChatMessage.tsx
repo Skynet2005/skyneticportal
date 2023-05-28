@@ -10,9 +10,9 @@ import { FC, memo, useContext, useEffect, useRef, useState } from 'react';
 
 // import { useTranslation } from 'next-i18next';
 
-import { updateConversation } from '../../../utils/app/conversation';
+import { updateConversation } from '../../../utils/aichat/app/conversation';
 
-import { Message } from '../../../utils/types/chat';
+import { Message } from '../../../types/aichat/chat';
 
 // import HomeContext from '@/pages/api/home/home.context';
 

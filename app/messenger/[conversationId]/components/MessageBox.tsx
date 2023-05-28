@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { format } from 'date-fns';
 import { useSession } from 'next-auth/react';
-import { FullMessageType } from '@/app/utils/types';
+import { FullMessageType } from '@/app/types/messenger';
 
 import Avatar from '@/app/messenger/components/Avatar';
 import ImageModal from './ImageModal';

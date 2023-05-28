@@ -18,9 +18,9 @@ import {
 
 // import { useTranslation } from 'next-i18next';
 
-import { Message } from '../../../utils/types/chat';
-import { Plugin } from '../../../utils/types/plugin';
-import { Prompt } from '../../../utils/types/prompt';
+import { Message } from '../../../types/aichat/chat';
+import { Plugin } from '../../../types/plugin';
+import { Prompt } from '../../../types/prompt';
 
 // import HomeContext from '@/pages/api/home/home.context';
 

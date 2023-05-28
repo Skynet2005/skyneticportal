@@ -1,5 +1,5 @@
-import { Conversation } from '../types/chat';
-import { OpenAIModelID, OpenAIModels } from '../types/openai';
+import { Conversation } from '../../../types/aichat/chat';
+import { OpenAIModelID, OpenAIModels } from '../../../types/openai';
 
 import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from './const';
 

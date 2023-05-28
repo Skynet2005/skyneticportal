@@ -14,7 +14,7 @@ import {
   useState,
 } from 'react';
 
-import { FolderInterface } from '../../../utils/types/folder';
+import { FolderInterface } from '../../../types/folder';
 
 import HomeContext from '@/pages/api/home/home.context';
 

@@ -4,15 +4,15 @@ import { useCallback, useContext, useEffect } from 'react';
 
 import { useCreateReducer } from '../../../utils/messenger/useHooks/useCreateReducer';
 
-import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from '../../../utils/app/const';
-import { saveConversation, saveConversations } from '../../../utils/app/conversation';
-import { saveFolders } from '../../../utils/app/folders';
-import { exportData, importData } from '../../../utils/app/importExport';
+import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from '../../../utils/aichat/app/const';
+import { saveConversation, saveConversations } from '../../../utils/aichat/app/conversation';
+import { saveFolders } from '../../../utils/aichat/app/folders';
+import { exportData, importData } from '../../../utils/aichat/app/importExport';
 
-import { Conversation } from '../../../utils/types/chat';
-import { LatestExportFormat, SupportedExportFormats } from '../../../utils/types/export';
-import { OpenAIModels } from '../../../utils/types/openai';
-import { PluginKey } from '../../../utils/types/plugin';
+import { Conversation } from '../../../types/aichat/chat';
+import { LatestExportFormat, SupportedExportFormats } from '../../../types/export';
+import { OpenAIModels } from '../../../types/openai';
+import { PluginKey } from '../../../types/plugin';
 
 // import HomeContext from '@/pages/api/home/home.context';
 

@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'filled': '#ffffff',
+        'unfilled-bg': 'transparent',
+        'unfilled-text': '#ffffff',
+        'unfilled-border': '#000000',
+      },
       backgroundImage: theme => ({
         'background': "url('/images/background.png')",
       })

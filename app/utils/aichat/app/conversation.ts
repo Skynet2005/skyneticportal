@@ -1,4 +1,4 @@
-import { Conversation } from '../types/chat';
+import { Conversation } from '../../../types/aichat/chat';
 
 export const updateConversation = (
   updatedConversation: Conversation,

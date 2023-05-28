@@ -1,4 +1,4 @@
-import { OPENAI_API_TYPE } from '../app/const';
+import { OPENAI_API_TYPE } from '@/app/utils/aichat/app/const';
 
 export interface OpenAIModel {
   id: string;
@@ -9,7 +9,6 @@ export interface OpenAIModel {
 
 export enum OpenAIModelID {
   GPT_3_5 = 'gpt-3.5-turbo',
-  GPT_3_5_AZ = 'gpt-35-turbo',
   GPT_4 = 'gpt-4',
   GPT_4_32K = 'gpt-4-32k',
 }
@@ -20,12 +19,6 @@ export const fallbackModelID = OpenAIModelID.GPT_3_5;
 export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
   [OpenAIModelID.GPT_3_5]: {
     id: OpenAIModelID.GPT_3_5,
-    name: 'GPT-3.5',
-    maxLength: 12000,
-    tokenLimit: 4000,
-  },
-  [OpenAIModelID.GPT_3_5_AZ]: {
-    id: OpenAIModelID.GPT_3_5_AZ,
     name: 'GPT-3.5',
     maxLength: 12000,
     tokenLimit: 4000,
@@ -43,3 +36,12 @@ export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
     tokenLimit: 32000,
   },
 };
+
+// DALL-E Integration Later
+// https://platform.openai.com/docs/models/dall-e
+// const response = await openai.createImage({
+//   prompt: "a white siamese cat",
+//   n: 1,
+//   size: "1024x1024",
+// });
+// image_url = response.data.data[0].url;

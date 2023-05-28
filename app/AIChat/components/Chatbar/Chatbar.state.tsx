@@ -1,4 +1,4 @@
-import { Conversation } from '../../../utils/types/chat';
+import { Conversation } from '../../../types/aichat/chat';
 
 export interface ChatbarInitialState {
   searchTerm: string;

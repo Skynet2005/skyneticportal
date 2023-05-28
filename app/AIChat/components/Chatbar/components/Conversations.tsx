@@ -1,4 +1,4 @@
-import { Conversation } from '../../../../utils/types/chat';
+import { Conversation } from '../../../../types/aichat/chat';
 
 import { ConversationComponent } from './Conversation';
 

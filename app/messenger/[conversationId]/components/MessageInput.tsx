@@ -16,6 +16,8 @@ interface MessageInputProps {
   register: UseFormRegister<FieldValues>,
   errors: FieldErrors;
   onSubmit: (data: FieldValues) => void
+  onFocus?: () => void;
+  onBlur?: () => void;
 }
 
 const MessageInput: React.FC<MessageInputProps> = ({ 
@@ -25,6 +27,8 @@ const MessageInput: React.FC<MessageInputProps> = ({
   required, 
   register,
   onSubmit,
+  onFocus,
+  onBlur
 }) => {
   const [loading, setLoading] = useState(false);
 
@@ -45,6 +49,8 @@ const MessageInput: React.FC<MessageInputProps> = ({
           focus:outline-none
           min-h-[40px]
         "
+        onFocus={onFocus}
+        onBlur={onBlur}
         minRows={1}
         maxRows={5}
         onKeyDown={async (e) => {

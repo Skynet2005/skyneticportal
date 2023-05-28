@@ -2,7 +2,7 @@ import { FC, useContext, useState } from 'react';
 
 // import { useTranslation } from 'next-i18next';
 
-import { DEFAULT_TEMPERATURE } from '../../../utils/app/const';
+import { DEFAULT_TEMPERATURE } from '../../../utils/aichat/app/const';
 
 // import HomeContext from '@/pages/api/home/home.context';
 

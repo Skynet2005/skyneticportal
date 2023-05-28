@@ -1,4 +1,4 @@
-import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from '../../../app/utils/app/const';
+import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from '../../../app/utils/aichat/app/const';
 import {
   cleanData,
   isExportFormatV1,
@@ -6,10 +6,10 @@ import {
   isExportFormatV3,
   isExportFormatV4,
   isLatestExportFormat,
-} from '../../../app/utils/app/importExport';
+} from '../../../app/utils/aichat/app/importExport';
 
-import { ExportFormatV1, ExportFormatV2, ExportFormatV4 } from '../../../app/utils/types/export';
-import { OpenAIModelID, OpenAIModels } from '../../../app/utils/types/openai';
+import { ExportFormatV1, ExportFormatV2, ExportFormatV4 } from '../../../app/types/export';
+import { OpenAIModelID, OpenAIModels } from '../../../app/types/openai';
 
 import { describe, expect, it } from 'vitest';
 

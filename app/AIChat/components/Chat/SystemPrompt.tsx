@@ -9,10 +9,10 @@ import {
 
 // import { useTranslation } from 'next-i18next';
 
-import { DEFAULT_SYSTEM_PROMPT } from '../../../utils/app/const';
+import { DEFAULT_SYSTEM_PROMPT } from '../../../utils/aichat/app/const';
 
-import { Conversation } from '../../../utils/types/chat';
-import { Prompt } from '../../../utils/types/prompt';
+import { Conversation } from '../../../types/aichat/chat';
+import { Prompt } from '../../../types/prompt';
 
 import { PromptList } from './PromptList';
 import { VariableModal } from './VariableModal';

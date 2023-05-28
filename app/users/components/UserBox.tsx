@@ -19,9 +19,9 @@ const UserBox: React.FC<UserBoxProps> = ({
   const handleClick = useCallback(() => {
     setIsLoading(true);
 
-    axios.post('/api/conversations', { userId: data.id })
+    axios.post('/api/messenger/conversations', { userId: data.id })
     .then((data) => {
-      router.push(`/conversations/${data.data.id}`);
+      router.push(`/messenger/${data.data.id}`);
     })
     .finally(() => setIsLoading(false));
   }, [data, router]);
@@ -33,20 +33,7 @@ const UserBox: React.FC<UserBoxProps> = ({
       )}
       <div
         onClick={handleClick}
-        className="
-          w-full 
-          relative 
-          flex 
-          items-center 
-          space-x-3 
-          p-3
-          bg-neutral-900 
-          hover:bg-neutral-800
-          rounded-lg
-          transition
-          cursor-pointer
-        "
-      >
+        className="w-full relative flex items-center space-x-3 p-3 bg-neutral-900 hover:bg-neutral-800 rounded-lg transition cursor-pointer">
         <Avatar user={data} />
         <div className="min-w-0 flex-1">
           <div className="focus:outline-none">

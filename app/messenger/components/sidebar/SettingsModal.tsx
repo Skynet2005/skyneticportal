@@ -27,7 +27,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
-  console.log(currentUser, '&TEST_CURRENT_USER')
+  console.log(currentUser, 'Check SettingsModal')
 
   const {
     register,
@@ -106,6 +106,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     uploadPreset="sdb3hnwn"
                   >
                     <Button
+                      title="Upload Photo"
                       disabled={isLoading}
                       secondary
                       type="button"

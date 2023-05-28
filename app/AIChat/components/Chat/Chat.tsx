@@ -12,16 +12,16 @@ import toast from 'react-hot-toast';
 
 // import { useTranslation } from 'next-i18next';
 
-import { getEndpoint } from '../../../utils/app/api';
+import { getEndpoint } from '../../../utils/aichat/app/api';
 import {
   saveConversation,
   saveConversations,
   updateConversation,
-} from '../../../utils/app/conversation';
-import { throttle } from '../../../utils/data/throttle';
+} from '../../../utils/aichat/app/conversation';
+import { throttle } from '../../../utils/aichat/data/throttle';
 
-import { ChatBody, Conversation, Message } from '../../../utils/types/chat';
-import { Plugin } from '../../../utils/types/plugin';
+import { ChatBody, Conversation, Message } from '../../../types/aichat/chat';
+import { Plugin } from '../../../types/plugin';
 
 // import HomeContext from '../../../pages/api/home/home.context';
 

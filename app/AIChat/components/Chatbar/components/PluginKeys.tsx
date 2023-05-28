@@ -2,7 +2,7 @@ import { IconKey } from '@tabler/icons-react';
 import { KeyboardEvent, useContext, useEffect, useRef, useState } from 'react';
 // import { useTranslation } from 'react-i18next';
 
-import { PluginID, PluginKey } from '../../../../utils/types/plugin';
+import { PluginID, PluginKey } from '../../../../types/plugin';
 
 import HomeContext from '@/pages/api/home/home.context';
 

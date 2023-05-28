@@ -1,4 +1,4 @@
-import { Conversation } from '../types/chat';
+import { Conversation } from '../../../types/aichat/chat';
 import {
   ExportFormatV1,
   ExportFormatV2,
@@ -6,9 +6,9 @@ import {
   ExportFormatV4,
   LatestExportFormat,
   SupportedExportFormats,
-} from '../types/export';
-import { FolderInterface } from '../types/folder';
-import { Prompt } from '../types/prompt';
+} from '../../../types/export';
+import { FolderInterface } from '../../../types/folder';
+import { Prompt } from '../../../types/prompt';
 
 import { cleanConversationHistory } from './clean';
 
